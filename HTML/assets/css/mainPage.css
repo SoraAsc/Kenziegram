@@ -1,0 +1,359 @@
+
+/* GERAL */
+html, body, header, main, footer, article, div, span, p, a, figure, img, small, ul, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    list-style: none;    
+}
+.container{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+
+
+/* BODY */
+/*body{}*/
+
+/* HEADER */
+header{
+    padding: 12px 0;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px 2px rgba(233, 233, 233, 1);
+    min-width: 60em;
+    width: 100%;
+}
+
+header  input{   
+    background-color: #FAFAFA;
+    width: 19em;
+    height: 2.3em;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 1px 1px rgba(225, 225, 225, 1);  
+  
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: #C6C6C6;
+}
+  
+:-moz-placeholder {
+    text-align: center;
+    color: #C6C6C6;
+}
+
+header .linha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a figure img{    
+    margin-left: 20px;
+    position: relative;
+    right: 5rem;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header ul li .containerNotificacoes{
+    transform: translateX(-21em) translateY(0.75em);
+    z-index: 2;
+    border-radius: 10px;
+    width: 400px;
+    background: #FFFFFF;
+    border: 1px solid rgba(233, 233, 233, 1);
+    position: relative;
+    height: 20em;
+    position: absolute;
+}
+header ul li .containerNotificacoes_hidden{
+    display: none;
+}
+
+header ul li .containerNotificacoes::after {
+    content: '';
+    position: absolute;
+    top: -2.2%;
+    right:11.4%;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    border-right:1px solid rgba(233, 233, 233, 1);
+    border-bottom:1px solid rgba(233, 233, 233, 1);
+    transform:rotate(225deg);
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesDoMes::before{
+    content: 'Este mês';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesDoMes{
+    border-bottom:1px solid rgba(233, 233, 233, 1);
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure{
+    margin: 15px 0px;
+    font-size: 12px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure figcaption{
+    display: inline;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure button{
+    display: inline;
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    top: 0.4em;
+    background-color: #1198F3;
+    color: whitesmoke;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+header ul li .containerNotificacoes .conteudoNotificacao div figure .seguindoBtn{
+    color: black;
+    background-color: #FFFFFF;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesAnteriores::before{
+    content: 'Anteriores';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesAnteriores{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+/* PÁGINA*/
+main{
+    padding-top: 2em;
+    margin-top: 0.1em;
+    min-width: 60em;
+    background-color: #FAFAFA;
+}
+/*.container .colunaEsquerda{}*/
+.container .colunaEsquerda .usuariosOnline{
+    display: flex;
+    margin-bottom: 2em;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 0px 2px rgb(233 233 233);
+    overflow: auto;
+    height: 8em;
+    align-items: center;
+    width: 635px;
+}
+.container .colunaEsquerda .usuariosOnline figure{
+    text-align: center;
+    padding-left: 3em;
+}
+.container .colunaEsquerda .usuariosOnline figure img{
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 2px;
+    width: 70px;
+    height: 70px;
+}
+.container .colunaEsquerda .usuariosOnline figure figcaption{
+    font-size: 13px;
+}
+
+.container .colunaEsquerda .feedContainer .feed{
+    background-color: #FFFFFF;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 0px 2px rgb(233 233 233);
+    width: 635px;
+}
+
+.container .colunaEsquerda .feedContainer .feed figure{
+    display: flex;  
+    padding: 1em;    
+    align-items: center;
+    
+}
+
+.container .colunaEsquerda .feedContainer .feed figure img{
+    width: 40px;
+    height: 40px;
+    margin-left: 0.1em;
+}
+
+.container .colunaEsquerda .feedContainer .feed figure figcaption{
+    margin-left: 1em;
+}
+
+.container .colunaEsquerda .feedContainer .feed figure button{
+    margin-left: 2em;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.container .colunaEsquerda .feedContainer .feed figure button img{
+    width: 35px;
+    height: 35px;
+    margin-left: 0em;
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo{
+    height: 560px;
+    position:relative;
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoImagemPrincipal{
+    width: 100%;
+    box-shadow: 0px 0px 0px 2px rgb(233 233 233);
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoImagensSecundarias{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoImagensSecundarias .feedConteudoImagemMarcar{
+    float: right;
+    padding-right: 1em;
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoImagensSecundarias a{
+    margin-right: 15px;
+}
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoImagensSecundarias p{
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoForm{
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 0px 2px rgb(233 233 233);
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoForm img{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoForm input[type='text']{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 17px;
+
+}
+
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoForm input[type='text']::placeholder{
+    text-align: left;
+}
+.container .colunaEsquerda .feedContainer .feed .feedConteudo .feedConteudoForm input[type='submit']{
+    border: none;
+    background-color: transparent;
+    color: rgba(var(--d69,0,149,246),0.3);
+    font-size: 0.9em;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.opcoesPublicacao{    
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+.opcoesPublicacao_hidden{
+    display: none;
+}
+
+.opcoesPublicacao .menuOpcoesPublicacao{
+    animation: 0.1s zoomOut;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    height: 45vh;
+    width: 30vw;
+    background-color: #FFFFFF;
+    display: grid;
+}
+
+#denunciarPublicacaoBtn,#deixarDeSeguirUsuarioBtn{
+    color: red;
+    font-weight: bolder;
+}
+
+.opcoesPublicacao .menuOpcoesPublicacao button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 0.1em 0px 0px rgba(233, 233, 233, 1);
+    font-size: 1.9vh;
+}
+
+.opcoesPublicacao .menuOpcoesPublicacao button:active{
+    background-color: rgba(233, 233, 233, 1);
+}
+
+/* EXTRAS */
+img[src="../img/heart.png"],img[src="../img/messagepublicacao.png"]{
+    width: 32px;
+    height: 32px;
+}
+
+/* ANIMATIO0N */
+
+@keyframes zoomOut{
+    0%{
+        transform: scale(1.4,1.4);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}

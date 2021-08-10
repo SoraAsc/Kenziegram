@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainPage.css">
+    <title>Kenziegram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="linha">
+                <div class="linha__coluna linha__coluna--esquerda">
+                    <a href="#">
+                        <figure>
+                            <img src="../img/logo.svg" alt="Logo Kenziegram">
+                            <figcaption class="hidden">Logo Kenziegram</figcaption>
+                        </figure>                        
+                    </a>                    
+                </div>
+
+                <input type="search" name="pesquisa" id="" placeholder="🔍︁ Pesquisar">
+                
+                <div class="linha__coluna linha__coluna--direita">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../img/home.svg" alt="Icone home"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/message.svg" alt="Icone mensagem"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/explore.svg" alt="Icone explore"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/notification.svg" alt="Icone notificações"></a>
+                            <div class="containerNotificacoes_hidden">
+                                <div class="conteudoNotificacao">
+                                    <div class="notificacoesDoMes">
+                                        <figure>
+                                            <img src="../img/profile.svg" alt="">
+                                            <figcaption><strong>Usuário 1</strong> começou a seguir você.</figcaption>
+                                            <button class="seguindoBtn">Seguindo</button>
+                                        </figure>
+                                        <figure>
+                                            <img src="../img/profile.svg" alt="">
+                                            <figcaption><strong>Usuário 2</strong> começou a seguir você.</figcaption>
+                                            <button class="seguirBtn">Seguir</button>
+                                        </figure>
+                                    </div>
+                                    <div class="notificacoesAnteriores">
+                                        <figure>
+                                            <img src="../img/profile.svg" alt="">
+                                            <figcaption><strong>Usuário 4</strong> começou a seguir você.</figcaption>
+                                            <button class="seguirBtn">Seguir</button>
+                                        </figure>
+                                        <figure>
+                                            <img src="../img/profile.svg" alt="">
+                                            <figcaption><strong>Usuário 5</strong> começou a seguir você.</figcaption>
+                                            <button class="seguindoBtn">Seguindo</button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../../../index.html"><img src="../img/profile.svg" alt="Icone perfil"></a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="colunaEsquerda">
+                <div class="usuariosOnline">
+                    <figure>
+                        <img src="../img/profile.svg" alt="Usuário 1">
+                        <figcaption>Usuário 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../img/profile.svg" alt="Usuário 2">
+                        <figcaption>Usuário 2</figcaption>
+                    </figure>                                      
+                </div>
+                <div class="feedContainer">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="opcoesPublicacao_hidden">
+        <div class="menuOpcoesPublicacao">
+            <button id="denunciarPublicacaoBtn">Denunciar</button>
+            <button id="deixarDeSeguirUsuarioBtn">Deixar de seguir</button>
+            <a href="../../../index.html"> <button id="irParaPaginaDaPublicacaoBtn"> Ir para a publicação</button> </a>
+            <button id="compartilharPublicacaoBtn">Compartilhar em...</button>
+            <button id="copiarLinkDaPublicacaoBtn">Copiar link</button>
+            <button id="incorporarPublicacaoBtn">Incorporar</button>
+            <button id="cancelarmenuPublicacaoBtn">Cancelar</button>
+
+        </div>
+    </div>
+
+    <script type="module" src="../js/mainPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+/*
+
+Theme Name: Kenziegram
+Author: Kenzie Academy
+Description: Esse é o kenziegram
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (HC Desenvolvimentos v1)
+--------------------------------------------
+**** GERAL
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @media
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/* GERAL */
+html, body, header, main, footer, article, div, span, p, a, figure, img, small, ul, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    list-style: none;    
+}
+.container{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+
+
+/* BODY */
+/*body{}*/
+
+/* HEADER */
+header{
+    padding: 12px 0;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px 2px #E1E1E1;
+    min-width: 60em;
+    width: 100%;
+}
+/*header .container{} */
+
+header  input{   
+    background-color: #FAFAFA;
+    width: 19em;
+    height: 2.3em;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 1px 1px rgba(233, 233, 233, 1);  
+  
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: #C6C6C6;
+}
+  
+:-moz-placeholder {
+    text-align: center;
+    color: #C6C6C6;
+}
+
+header .linha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*header .linha__coluna{}*/
+/*header a{}*/
+/*header a figure{}*/
+header a figure img{    
+    margin-left: 20px;
+    position: relative;
+    right: 5rem;
+}
+
+
+/*header ul{}*/
+header ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header ul li .containerNotificacoes{
+    transform: translateX(-21em) translateY(0.75em);
+    z-index: 2;
+    border-radius: 10px;
+    width: 400px;
+    background: #FFFFFF;
+    border: 1px solid rgba(233, 233, 233, 1);
+    position: relative;
+    height: 20em;
+    position: absolute;
+}
+header ul li .containerNotificacoes_hidden{
+    display: none;
+}
+
+header ul li .containerNotificacoes::after {
+    content: '';
+    position: absolute;
+    top: -2.2%;
+    right:11.4%;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    border-right:1px solid rgba(233, 233, 233, 1);
+    border-bottom:1px solid rgba(233, 233, 233, 1);
+    transform:rotate(225deg);
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesDoMes::before{
+    content: 'Este mês';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesDoMes{
+    border-bottom:1px solid rgba(233, 233, 233, 1);
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure{
+    margin: 15px 0px;
+    font-size: 12px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure figcaption{
+    display: inline;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao div figure button{
+    display: inline;
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    top: 0.4em;
+    background-color: #1198F3;
+    color: whitesmoke;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(233, 233, 233, 1);
+}
+header ul li .containerNotificacoes .conteudoNotificacao div figure .seguindoBtn{
+    color: black;
+    background-color: #FFFFFF;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesAnteriores::before{
+    content: 'Anteriores';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+header ul li .containerNotificacoes .conteudoNotificacao .notificacoesAnteriores{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
+header ul li a img[src="./assets/img/profile.svg"]{
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 1px;
+}
+/*header ul li a{}*/
+/*header ul li a img{}*/
+
+/* FOOTER */
+
+
+/* PÁGINA INICIAL */
+main{
+    padding-top: 2em;
+    margin-top: 0.1em;
+    min-width: 60em;
+    background-color: #FAFAFA;
+}
+/*main article{}*/
+/*main article .container{}*/
+main article .secaoSobreUsuario{
+    max-width: 800px;
+}
+main article .secaoSobreUsuario .linha{
+    display: inline-flex;    
+}
+
+
+/*main article .secaoSobreUsuario figure{}*/
+main article .secaoSobreUsuario figure img{
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 5px; 
+    width: 150px;
+    height: 150px;
+    
+}
+
+
+main article .secaoSobreUsuario .sobreUsuario{
+    margin-left: 4em;
+    position: relative;
+    top: -23px;
+}
+main article .secaoSobreUsuario .sobreUsuario__nome{
+    display: inline-flex;
+    align-items: center;
+    
+}
+/*main article .secaoSobreUsuario .sobreUsuario__nome h2{}*/
+main article .secaoSobreUsuario .sobreUsuario__nome button{
+    margin-left: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #FAFAFA;
+    border: none;
+    box-shadow: 0px 0px 1px 1.3px rgba(233, 233, 233, 1);  
+    height: 2em;    
+    width: 10em;
+}
+
+main article .secaoSobreUsuario .sobreUsuario__nome #transparentBackgroundButton{
+    box-shadow: none;
+    width: auto;
+    background-color: transparent;
+}
+
+main article .secaoSobreUsuario .sobreUsuario__nome #sobreUsuario__amizadeButton{
+    width: 5em;
+}
+
+main article .secaoSobreUsuario .sobreUsuario__nome #sobreUsuario__arrowButton{
+    width: 2.5em;
+}
+
+main article .secaoSobreUsuario .sobreUsuario__nome button:hover{
+    background-color: #FFFF;    
+}
+/*main article .secaoSobreUsuario .sobreUsuario__seguidores{}*/
+main article .secaoSobreUsuario .sobreUsuario__seguidores ul{
+    display: inline-flex;
+}
+main article .secaoSobreUsuario .sobreUsuario__seguidores ul li{
+    margin-right: 2.8em;
+}
+main article .secaoSobreUsuario .sobreUsuario__seguidores ul li a{
+    color: black;
+}
+/*main article .secaoSobreUsuario .sobreUsuario__seguidores ul li a strong{}*/
+/*main article .secaoSobreUsuario .sobreUsuario__descricao{}*/
+/*main article .secaoSobreUsuario .sobreUsuario__descricao h3{}*/
+main article .secaoSobreUsuario .sobreUsuario__descricao p{
+    padding-bottom: 5px;
+}
+main article .secaoSobreUsuario .sobreUsuario__descricao p a{
+    font-weight: 600;
+}
+
+main article .secaoDestaquesUsuario{
+    overflow: auto;
+    width: 100%;
+    min-width: 800px;
+}
+main article .secaoDestaquesUsuario ul{
+    display: inline-flex;
+}
+main article .secaoDestaquesUsuario ul li{
+    margin-right: 3.3em;
+    max-width: 91px;
+}
+/*main article .secaoDestaquesUsuario ul li figure{}*/
+main article .secaoDestaquesUsuario ul li figure img{
+    border-radius: 50%;
+    border: 2px solid rgb(233, 233, 233);
+    padding: 5px; 
+    width: 91px;
+    height: 91px;
+    object-fit: contain;
+}
+
+main article .secaoDestaquesUsuario ul li h3{
+    text-align: center;    
+    font-size: 15px;
+}
+
+.container hr{
+    margin: 30px 0 0 0;
+    width: 51.7em;
+    max-width: 880px;
+    border: 0.5px solid rgb(233, 233, 233);
+}
+main article .selecoesPRVMUsuario{
+    text-align: center;
+    margin-top: 15px;
+    max-width: 880px;
+    width: 51.9em;
+}
+main article .selecoesPRVMUsuario figure{
+display: inline;
+    margin-left: 40px;
+}
+
+main article .selecoesPRVMUsuario #selecoesUsuarioPSelecionado{
+    border-top: 2px solid #0E0639;
+    padding-top: 16px;    
+}
+
+main article .selecoesPRVMUsuario #selecoesUsuarioPSelecionado strong{
+    color: black;
+}
+
+main article .selecoesPRVMUsuario figure figcaption{
+    display: inline;
+    color: #9F9F9F;
+    font-size: 14px;
+    padding-left: 4px;    
+    letter-spacing: 1px;
+}
+
+main article .publicacoesUsuario{
+    margin: 30px 0px 0px 0.8em; 
+}
+main article .publicacoesUsuario .publicacaoGeral{
+    position: relative;
+    display: inline-block;    
+}
+
+main article .publicacoesUsuario .publicacaoGeral .publicacaoComponentes{
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+
+main article .publicacoesUsuario .publicacaoGeral .publicacaoComponentes img{
+    width: 249.7px;
+    height: 140.5px;
+    margin-bottom: 5px;
+}
+
+main article .publicacoesUsuario .publicacaoGeral .publicacaoComponentes  a{
+    display:table;
+}
+main article .publicacoesUsuario .publicacaoGeral .publicacaoComponentes figcaption{
+    max-width: 249.7px;
+}
+main article .publicacoesUsuario .publicacaoGeral .detalhesSobrePublicacao{
+    position: absolute;
+    top: 0%;
+    padding-top: 25%;
+    color: whitesmoke;
+    font-weight: bold;
+    display: none;
+    width: 249.7px;
+    height: 140.5px;
+}
+main article .publicacoesUsuario .publicacaoGeral:hover .detalhesSobrePublicacao{
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+main article .publicacoesUsuario .publicacaoGeral .detalhesSobrePublicacaoLikes{ 
+
+    display:  inline-flex;
+    margin-left: 3.5em;
+}
+main article .publicacoesUsuario .publicacaoGeral .detalhesSobrePublicacaoMenssagens{
+    display:  inline-flex;
+    margin-left: 2em;
+}
+main article .publicacoesUsuario .publicacaoGeral .detalhesSobrePublicacao img{
+    margin-right: 5px;
+}
+
+.opcoesPaginaUsuario{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+.opcoesPaginaUsuario_hidden{
+    display: none;
+}
+
+.opcoesPaginaUsuario .menuOpcoesPaginaUsuario{
+    animation: 0.1s zoomOut;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    height: 30vh;
+    width: 30vw;
+    background-color: #FFFFFF;
+    display: grid;
+}
+
+.opcoesPaginaUsuario .menuOpcoesPaginaUsuario button{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+
+    box-shadow: 0px 0.1em 0px 0px rgba(233, 233, 233, 1);
+    font-size: 1.9vh;
+}
+.opcoesPaginaUsuario .menuOpcoesPaginaUsuario button:active{
+    background-color: rgba(233, 233, 233, 1);
+}
+
+.opcoesPaginaUsuario .menuOpcoesPaginaUsuario #cancelarMenuUsuarioBtn{
+    box-shadow: 0px 0px 0px 0px rgba(233, 233, 233, 1);   
+    color: black;
+    font-weight: normal;
+}
+
+/* EXTRAS */
+img[src="HTML/assets/img/heart.png"],img[src="HTML/assets/img/messagepublicacao.png"]{
+    width: 22px;
+    height: 22px;
+}
+
+/* @media */
+
+
+
+/* ANIMATIO0N */
+
+@keyframes zoomOut{
+    0%{
+        transform: scale(1.4,1.4);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
